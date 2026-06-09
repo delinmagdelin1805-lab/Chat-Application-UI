@@ -1,0 +1,204 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+    font-family:Arial, sans-serif;
+
+    background:#f4f4f4;
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+/* Chat Container */
+
+.chat-container{
+    width:90%;
+
+    max-width:1100px;
+
+    height:90vh;
+
+    background:white;
+
+    display:flex;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:30%;
+
+    background:#111827;
+
+    color:white;
+
+    padding:20px;
+}
+
+.sidebar h2{
+    margin-bottom:30px;
+}
+
+.user{
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    margin-bottom:15px;
+
+    background:#1f2937;
+}
+
+.user img{
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+}
+
+/* Chat Section */
+
+.chat-section{
+    width:70%;
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+/* Header */
+
+.chat-header{
+    padding:20px;
+
+    background:#2563eb;
+
+    color:white;
+}
+
+/* Messages */
+
+.messages{
+    flex:1;
+
+    padding:20px;
+
+    overflow-y:auto;
+
+    background:#f9fafb;
+}
+
+.message{
+    max-width:60%;
+
+    padding:12px 16px;
+
+    margin-bottom:15px;
+
+    border-radius:10px;
+
+    font-size:15px;
+}
+
+.received{
+    background:#e5e7eb;
+
+    color:#111827;
+}
+
+.sent{
+    background:#2563eb;
+
+    color:white;
+
+    margin-left:auto;
+}
+
+/* Input Area */
+
+.input-area{
+    display:flex;
+
+    padding:20px;
+
+    border-top:1px solid #ddd;
+}
+
+.input-area input{
+    flex:1;
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:5px;
+
+    outline:none;
+}
+
+.input-area button{
+    padding:12px 20px;
+
+    margin-left:10px;
+
+    border:none;
+
+    background:#2563eb;
+
+    color:white;
+
+    border-radius:5px;
+
+    cursor:pointer;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .chat-container{
+        flex-direction:column;
+
+        height:auto;
+    }
+
+    .sidebar{
+        width:100%;
+    }
+
+    .chat-section{
+        width:100%;
+    }
+
+    .message{
+        max-width:80%;
+    }
+}
